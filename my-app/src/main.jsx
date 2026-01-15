@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { ToastContainer } from "react-toastify";
 
 createRoot(document.getElementById("root")).render(
-	<BrowserRouter>
+	<BrowserRouter basename={import.meta.env.BASE_URL}>
 		<ToastContainer />
 		<Routes>
 			<Route path="/" element={<Home />}>
