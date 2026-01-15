@@ -1,0 +1,155 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	width: 100%;
+	justify-content: start;
+	min-height: 100vh;
+	margin-top: 100px;
+	padding: 0;
+}
+
+.tab {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.nav {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+/* form and modal */
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 30px;
+	border-radius: 8px;
+	border: 0px;
+	max-width: 500px;
+	color: black;
+}
+
+.modal__bg {
+	background-color: #242424;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+.form__input {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.form__input label {
+	font-weight: 600;
+}
+
+.form__input input {
+	background-color: #fff;
+	color: black;
+	padding: 0.5rem;
+	padding-right: 3rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	width: 300px;
+	border-radius: 0.5rem;
+	border: 1px grey solid;
+}
+
+.form__title {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	text-align: center;
+	color: #000;
+}
+.form__button {
+	display: flex;
+	gap: 1rem;
+}
+
+.form__button button {
+	width: 100%;
+}
+
+.form__button .cancel {
+	background-color: #aeaeae;
+}
+
+.form__button .cancel:hover {
+	background-color: #909090;
+}
+
+/* project card styling */
+
+.project__container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	overflow-wrap: break-word;
+	gap: 20px;
+	width: 100%;
+}
+
+.project {
+	background: white;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	width: 40%;
+	min-width: 300px;
+	transition: box-shadow 0.2s ease;
+}
+
+.project:hover {
+	background: rgb(240, 241, 244);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+}
+
+.project__name {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-bottom: 8px;
+	color: #1a1a1a;
+}
+
+.project__contact {
+	font-size: 0.9rem;
+	color: #666;
+	margin-bottom: 4px;
+}
+
+.project__description {
+	font-size: 0.9rem;
+	color: #666;
+	margin-bottom: 16px;
+	line-height: 1.4;
+}
+
+.project__role {
+	font-weight: 700;
+	color: #661af4;
+	background: #ebe4ff;
+	padding: 8px 12px;
+	border-radius: 4px;
+	font-size: 0.9rem;
+}
