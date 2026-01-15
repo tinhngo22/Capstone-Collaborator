@@ -5,10 +5,10 @@ import "./components.css";
 function CapstonePage() {
 	const [projects, setProjects] = useState([
 		{
-			name: "art project",
-			description: "drawing picture",
-			role: "looking for designer",
-			contact: "nina",
+			name: "Cultral Mural",
+			description: "Mural in NYUAD",
+			role: "Designer/Painter",
+			contact: "tina@nyu.edu",
 		},
 	]);
 
